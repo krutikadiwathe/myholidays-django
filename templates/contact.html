@@ -1,0 +1,100 @@
+{%extends 'base.html' %}
+
+{%block title%}Contact Us{%endblock title%}
+
+
+{%block body%}
+
+<div class="background bg-dark">
+<div class="container-fluid px-0">
+<img src="\static\img\16.jfif" class="d-block w-100" alt="...">
+</div>
+
+<div class= "container">
+<h1 class="text-center my-4 text-white">Contact Us</h1>
+<form method="post" action="/contact" class="row g-3">
+{% csrf_token %}
+  <div class="col-md-6">
+    <label for="email" class="form-label text-white">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email">
+  </div>
+  <div class="col-md-6">
+    <label for="name" class="form-label text-white">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+  </div>
+  <div class="col-md-6">
+    <label for="city" class="form-label text-white">City</label>
+    <input type="text" class="form-control" id="city" name="city" placeholder="Enter your City">
+  </div>
+ <div class="col-md-6">
+    <label for="state" class="form-label text-white">State</label>
+    <input type="text" class="form-control" id="state" name="state" placeholder="Enter your State">
+  </div>
+  <div class="col-md-2">
+    <label for="phone" class="form-label text-white">Phone No</label>
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your Phone No">
+  </div>
+  
+  <div class="col-12 my-4" >
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>
+
+<footer class="page-footer bg-dark min-height-calc(100vh-211px-580x)">
+  <div class="bg-success">
+    <div class="container">
+      <div class="row py-4 d-flex align-items-center">
+        <div class="col-md-12 text-center">
+          <a href="#"><i class="fab fa-facebook-f text-white mx-4"></i></a>
+          <a href="#"><i class="fab fa-twitter text-white mx-4"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in text-white mx-4"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g text-white mx-4"></i></a>
+          <a href="#"><i class="fab fa-instagram text-white mx-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="container text-center text-md-left mt-5">
+  <div class="row">
+
+    <div class="col-md-3 mx-auto mb-4">
+     <h6 class="text-uppercase font-weight-bold">The Provider</h6>
+     <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px">
+     <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor diam nec neque facilisis, et finibus eros scelerisque. Phasellus commodo magna non ullamcorper ullamcorper. Nulla egestas elit in ante laoreet, vel suscipit neque vehicula. Integer porttitor lacus eget fermentum hendrerit.</p>
+    </div>
+
+    <div class="col-md-2 mx-auto mb-4">
+     <h6 class="text-uppercase font-weight-bold">Products</h6>
+     <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px">
+     <ul class="list-unstyled">
+     <li class="my-2"><a href="#">Student Packages</a></li>
+     <li class="my-2"><a href="#">Honeymoon Packages</a></li>
+     <li class="my-2"><a href="#">Family Packages</a></li>
+     <li class="my-2"><a href="#">Women Special Packages</a></li>
+     <li class="my-2"><a href="#">Senior Citizen Packages</a></li>
+     </ul>
+    </div>
+
+   
+
+    <div class="col-md-2 mx-auto mb-4">
+     <h6 class="text-uppercase font-weight-bold">Contact</h6>
+     <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px; height: 2px">
+     <ul class="list-unstyled">
+     <li class="my-2"><i class="fas fa-home"></i>Navi Mumbai, Nerul sector 5</li>
+     <li class="my-2"><i class="fas fa-envelope-square"></i>myholidays@gmail.com</li>
+     <li class="my-2"><i class="fas fa-phone"></i>+91 9876540321</li>
+     <li class="my-2"><i class="fas fa-print"></i>+003746344985</li>
+     </ul>
+    </div>
+  </div>
+</div>
+
+</footer>
+
+
+{%endblock body%}
